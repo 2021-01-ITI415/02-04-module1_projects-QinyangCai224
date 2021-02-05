@@ -23,13 +23,13 @@ public class AppleTree : MonoBehaviour
     void Start()
     {
         // Dropping apples every second
-        Invoke("DropApple", 2f);
+        InvokeRepeating("DropApple", 2f, secondsBetweenAppleDrop);
     }
+
     void DropApple()
     {
         GameObject apple = Instantiate(applePrefab) as GameObject;
         apple.transform.position = transform.position;
-        Invoke("DropApple", secondsBetweenAppleDrop);
     }
 
     void Update()
