@@ -312,9 +312,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 7759823070050107275, guid: 39fe11f9b7838bb4489842cece301fb9, type: 3}
-  speed: 1
-  leftAndRightEdge: 10
-  chanceToChangeDirection: 0.2
+  speed: 10
+  leftAndRightEdge: 20
+  chanceToChangeDirection: 0.02
   secondsBetweenAppleDrop: 1
 --- !u!1 &1047760755
 GameObject:
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 1047760759}
   - component: {fileID: 1047760760}
   - component: {fileID: 1047760761}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -435,7 +435,10 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
-  basketList: []
+  basketList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1047760761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047760755}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0977f6412164c7c4b9dd6bbb7be45c70, type: 3}
   m_Name: 
